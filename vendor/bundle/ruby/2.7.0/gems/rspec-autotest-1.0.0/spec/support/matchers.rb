@@ -1,0 +1,27 @@
+RSpec::Matchers.define :map_specs do |specs|
+  match do |autotest|
+    @specs = specs
+    @autotest = prepare(autotest)
+    autotest.test_files_for(@file) == specs
+  end
+
+  chain :to do |file|
+    @file = file
+  end
+
+  if respond_to?(:failure_message)
+    failure_message do
+      "expected #{@autotest.class} to map #{@specs.inspect} to #{@file.inspect}\ngot #{@actual.inspect}"
+    end
+  else
+    failure_message_for_should do
+      "expected #{@autotest.class} to map #{@specs.inspect} to #{@file.inspect}\ngot #{@actual.inspect}"
+    end
+  end
+
+  def prepare(autotest)
+    find_order = @specs.dup << @file
+    autotest.instance_eval { @find_order = find_order }
+    autotest
+  end
+end

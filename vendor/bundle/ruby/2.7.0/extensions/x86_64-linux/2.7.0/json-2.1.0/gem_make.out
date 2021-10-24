@@ -1,0 +1,13 @@
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/json-2.1.0/ext/json
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211020-26553-3u2ivt.rb extconf.rb
+creating Makefile
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: 对“all”无需做任何事。
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install

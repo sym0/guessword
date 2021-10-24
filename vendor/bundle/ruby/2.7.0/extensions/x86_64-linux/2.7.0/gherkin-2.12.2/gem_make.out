@@ -1,0 +1,16 @@
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211020-26553-i3cfdr.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make "DESTDIR=" clean
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make "DESTDIR="
+compiling gherkin_lexer_zh_tw.c
+linking shared-object gherkin_lexer_zh_tw.so
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 gherkin_lexer_zh_tw.so ./.gem.20211020-26553-1l7inc5

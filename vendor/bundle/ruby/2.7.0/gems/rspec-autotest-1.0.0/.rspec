@@ -1,0 +1,4 @@
+--order rand
+--warnings
+--color
+--require spec_helper

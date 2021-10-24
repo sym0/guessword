@@ -1,0 +1,535 @@
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ext/nokogiri
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211020-26553-e4d8c8.rb extconf.rb
+checking if the C compiler accepts ... yes
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.3.0
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.8
+with the following patches applied:
+	- 0001-Revert-Do-not-URI-escape-in-server-side-includes.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.8.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.8... OK
+Running git apply with /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running 'configure' for libxml2 2.9.8... OK
+Running 'compile' for libxml2 2.9.8... OK
+Running 'install' for libxml2 2.9.8... OK
+Activating libxml2 2.9.8 (from /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ports/x86_64-pc-linux-gnu/libxml2/2.9.8)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.32.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxslt/1.1.32... OK
+Running 'configure' for libxslt 1.1.32... OK
+Running 'compile' for libxslt 1.1.32... OK
+Running 'install' for libxslt 1.1.32... OK
+Activating libxslt 1.1.32 (from /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ports/x86_64-pc-linux-gnu/libxslt/1.1.32)...
+checking for -llzma... no
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR="
+compiling html_document.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./html_document.h:4,
+                 from html_document.c:1:
+html_document.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+html_document.c:16:3: note: in expansion of macro ‘rb_scan_args’
+   16 |   rb_scan_args(argc, argv, "0*", &rest);
+      |   ^~~~~~~~~~~~
+compiling html_element_description.c
+compiling html_entity_lookup.c
+html_entity_lookup.c: In function ‘get’:
+html_entity_lookup.c:9:24: warning: unused parameter ‘self’ [-Wunused-parameter]
+    9 | static VALUE get(VALUE self, VALUE key)
+      |                  ~~~~~~^~~~
+compiling html_sax_parser_context.c
+compiling html_sax_push_parser.c
+compiling nokogiri.c
+compiling xml_attr.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_attr.h:4,
+                 from xml_attr.c:1:
+xml_attr.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_attr.c:58:3: note: in expansion of macro ‘rb_scan_args’
+   58 |   rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_attribute_decl.c
+compiling xml_cdata.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_cdata.h:4,
+                 from xml_cdata.c:1:
+xml_cdata.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_cdata.c:23:3: note: in expansion of macro ‘rb_scan_args’
+   23 |   rb_scan_args(argc, argv, "2*", &doc, &content, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_comment.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_comment.h:4,
+                 from xml_comment.c:1:
+xml_comment.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_comment.c:21:3: note: in expansion of macro ‘rb_scan_args’
+   21 |   rb_scan_args(argc, argv, "2*", &document, &content, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_document.c
+xml_document.c: In function ‘dealloc_node_i’:
+xml_document.c:3:38: warning: unused parameter ‘key’ [-Wunused-parameter]
+    3 | static int dealloc_node_i(xmlNodePtr key, xmlNodePtr node, xmlDocPtr doc)
+      |                           ~~~~~~~~~~~^~~
+xml_document.c: In function ‘dealloc’:
+xml_document.c:46:25: warning: passing argument 2 of ‘rb_st_foreach’ from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |   st_foreach(node_hash, dealloc_node_i, (st_data_t)doc);
+      |                         ^~~~~~~~~~~~~~
+      |                         |
+      |                         int (*)(xmlNode *, xmlNode *, xmlDoc *) {aka int (*)(struct _xmlNode *, struct _xmlNode *, struct _xmlDoc *)}
+In file included from /usr/include/ruby-2.7.0/ruby/intern.h:39,
+                 from /usr/include/ruby-2.7.0/ruby/ruby.h:2148,
+                 from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_document.h:4,
+                 from xml_document.c:1:
+/usr/include/ruby-2.7.0/ruby/st.h:141:31: note: expected ‘int (*)(st_data_t,  st_data_t,  st_data_t)’ {aka ‘int (*)(long unsigned int,  long unsigned int,  long unsigned int)’} but argument is of type ‘int (*)(xmlNode *, xmlNode *, xmlDoc *)’ {aka ‘int (*)(struct _xmlNode *, struct _xmlNode *, struct _xmlDoc *)’}
+  141 | int rb_st_foreach(st_table *, st_foreach_callback_func *, st_data_t);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_document.h:4,
+                 from xml_document.c:1:
+xml_document.c: In function ‘duplicate_document’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_document.c:327:6: note: in expansion of macro ‘rb_scan_args’
+  327 |   if(rb_scan_args(argc, argv, "01", &level) == 0)
+      |      ^~~~~~~~~~~~
+xml_document.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_document.c:354:3: note: in expansion of macro ‘rb_scan_args’
+  354 |   rb_scan_args(argc, argv, "0*", &rest);
+      |   ^~~~~~~~~~~~
+xml_document.c: In function ‘create_entity’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_document.c:433:3: note: in expansion of macro ‘rb_scan_args’
+  433 |   rb_scan_args(argc, argv, "14", &name, &type, &external_id, &system_id,
+      |   ^~~~~~~~~~~~
+xml_document.c: In function ‘canonicalize’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_document.c:508:3: note: in expansion of macro ‘rb_scan_args’
+  508 |   rb_scan_args(argc, argv, "03", &mode, &incl_ns, &with_comments);
+      |   ^~~~~~~~~~~~
+compiling xml_document_fragment.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_document_fragment.h:4,
+                 from xml_document_fragment.c:1:
+xml_document_fragment.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_document_fragment.c:17:3: note: in expansion of macro ‘rb_scan_args’
+   17 |   rb_scan_args(argc, argv, "1*", &document, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_dtd.c
+compiling xml_element_content.c
+compiling xml_element_decl.c
+compiling xml_encoding_handler.c
+xml_encoding_handler.c: In function ‘delete’:
+xml_encoding_handler.c:24:27: warning: unused parameter ‘klass’ [-Wunused-parameter]
+   24 | static VALUE delete(VALUE klass, VALUE name)
+      |                     ~~~~~~^~~~~
+xml_encoding_handler.c: In function ‘alias’:
+xml_encoding_handler.c:36:26: warning: unused parameter ‘klass’ [-Wunused-parameter]
+   36 | static VALUE alias(VALUE klass, VALUE from, VALUE to)
+      |                    ~~~~~~^~~~~
+compiling xml_entity_decl.c
+compiling xml_entity_reference.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_reference.h:4,
+                 from xml_entity_reference.c:1:
+xml_entity_reference.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_entity_reference.c:18:3: note: in expansion of macro ‘rb_scan_args’
+   18 |   rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_io.c
+xml_io.c: In function ‘io_read_callback’:
+xml_io.c:20:22: warning: passing argument 1 of ‘rb_rescue’ from incompatible pointer type [-Wincompatible-pointer-types]
+   20 |   string = rb_rescue(read_check, (VALUE)args, read_failed, 0);
+      |                      ^~~~~~~~~~
+      |                      |
+      |                      VALUE (*)(VALUE *) {aka long unsigned int (*)(long unsigned int *)}
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby-2.7.0/ruby/ruby.h:1987:17: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE *)’ {aka ‘long unsigned int (*)(long unsigned int *)’}
+ 1987 | VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+      |                 ^~~~~~~~~~~~~~~
+xml_io.c:20:47: warning: passing argument 3 of ‘rb_rescue’ from incompatible pointer type [-Wincompatible-pointer-types]
+   20 |   string = rb_rescue(read_check, (VALUE)args, read_failed, 0);
+      |                                               ^~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(void) {aka long unsigned int (*)(void)}
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby-2.7.0/ruby/ruby.h:1987:39: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(void)’ {aka ‘long unsigned int (*)(void)’}
+ 1987 | VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+xml_io.c: In function ‘io_write_callback’:
+xml_io.c:47:20: warning: passing argument 1 of ‘rb_rescue’ from incompatible pointer type [-Wincompatible-pointer-types]
+   47 |   size = rb_rescue(write_check, (VALUE)args, write_failed, 0);
+      |                    ^~~~~~~~~~~
+      |                    |
+      |                    VALUE (*)(VALUE *) {aka long unsigned int (*)(long unsigned int *)}
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby-2.7.0/ruby/ruby.h:1987:17: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE *)’ {aka ‘long unsigned int (*)(long unsigned int *)’}
+ 1987 | VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+      |                 ^~~~~~~~~~~~~~~
+xml_io.c:47:46: warning: passing argument 3 of ‘rb_rescue’ from incompatible pointer type [-Wincompatible-pointer-types]
+   47 |   size = rb_rescue(write_check, (VALUE)args, write_failed, 0);
+      |                                              ^~~~~~~~~~~~
+      |                                              |
+      |                                              VALUE (*)(void) {aka long unsigned int (*)(void)}
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby-2.7.0/ruby/ruby.h:1987:39: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(void)’ {aka ‘long unsigned int (*)(void)’}
+ 1987 | VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+xml_io.c: In function ‘io_close_callback’:
+xml_io.c:54:30: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+   54 | int io_close_callback(void * ctx) {
+      |                       ~~~~~~~^~~
+compiling xml_libxml2_hacks.c
+compiling xml_namespace.c
+compiling xml_node.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_node.h:4,
+                 from xml_node.c:1:
+xml_node.c: In function ‘duplicate_node’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_node.c:521:6: note: in expansion of macro ‘rb_scan_args’
+  521 |   if(rb_scan_args(argc, argv, "01", &level) == 0) {
+      |      ^~~~~~~~~~~~
+xml_node.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_node.c:1356:3: note: in expansion of macro ‘rb_scan_args’
+ 1356 |   rb_scan_args(argc, argv, "2*", &name, &document, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_node_set.c
+xml_node_set.c: In function ‘allocate’:
+xml_node_set.c:43:29: warning: unused parameter ‘klass’ [-Wunused-parameter]
+   43 | static VALUE allocate(VALUE klass)
+      |                       ~~~~~~^~~~~
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+xml_node_set.c: In function ‘slice’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_node_set.c:294:5: note: in expansion of macro ‘rb_scan_args’
+  294 |     rb_scan_args(argc, argv, "11", NULL, NULL);
+      |     ^~~~~~~~~~~~
+xml_node_set.c: In function ‘to_array’:
+xml_node_set.c:322:41: warning: unused parameter ‘rb_node’ [-Wunused-parameter]
+  322 | static VALUE to_array(VALUE self, VALUE rb_node)
+      |                                   ~~~~~~^~~~~~~
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+xml_node_set.c: In function ‘init_xml_node_set’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2799:117: warning: passing argument 3 of ‘rb_define_method0’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 2799 | #define rb_define_method(klass, mid, func, arity) rb_define_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
+      |                                                                                                                     ^~~~~~
+      |                                                                                                                     |
+      |                                                                                                                     VALUE (*)(VALUE,  VALUE) {aka long unsigned int (*)(long unsigned int,  long unsigned int)}
+xml_node_set.c:479:3: note: in expansion of macro ‘rb_define_method’
+  479 |   rb_define_method(klass, "to_a", to_array, 0);
+      |   ^~~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-2.7.0/ruby/ruby.h:2148,
+                 from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2775:27: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’}
+ 2775 | RB_METHOD_DEFINITION_DECL(rb_define_method, (2,3), (VALUE klass, const char *name), (klass, name))
+      |                           ^~~~~~~~~~~~~~~~
+/usr/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
+ 1042 |     __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
+      |                                                                                  ^~~~~~~
+/usr/include/ruby-2.7.0/ruby/intern.h:1074:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_1’
+ 1074 | RB_METHOD_DEFINITION_DECL_1(def,nonnull,def##0 ,0 ,decl,vars,(VALUE)) \
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-2.7.0/ruby/ruby.h:2775:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
+ 2775 | RB_METHOD_DEFINITION_DECL(rb_define_method, (2,3), (VALUE klass, const char *name), (klass, name))
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+compiling xml_processing_instruction.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_processing_instruction.h:4,
+                 from xml_processing_instruction.c:1:
+xml_processing_instruction.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_processing_instruction.c:20:3: note: in expansion of macro ‘rb_scan_args’
+   20 |   rb_scan_args(argc, argv, "3*", &document, &name, &content, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_reader.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_reader.h:4,
+                 from xml_reader.c:1:
+xml_reader.c: In function ‘from_memory’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_reader.c:533:3: note: in expansion of macro ‘rb_scan_args’
+  533 |   rb_scan_args(argc, argv, "13", &rb_buffer, &rb_url, &encoding, &rb_options);
+      |   ^~~~~~~~~~~~
+xml_reader.c: In function ‘from_io’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_reader.c:577:3: note: in expansion of macro ‘rb_scan_args’
+  577 |   rb_scan_args(argc, argv, "13", &rb_io, &rb_url, &encoding, &rb_options);
+      |   ^~~~~~~~~~~~
+compiling xml_relax_ng.c
+compiling xml_sax_parser.c
+xml_sax_parser.c: In function ‘attributes_as_list’:
+xml_sax_parser.c:88:9: warning: unused parameter ‘self’ [-Wunused-parameter]
+   88 |   VALUE self,
+      |   ~~~~~~^~~~
+xml_sax_parser.c: In function ‘start_element_ns’:
+xml_sax_parser.c:126:7: warning: unused parameter ‘nb_defaulted’ [-Wunused-parameter]
+  126 |   int nb_defaulted,
+      |   ~~~~^~~~~~~~~~~~
+compiling xml_sax_parser_context.c
+compiling xml_sax_push_parser.c
+compiling xml_schema.c
+compiling xml_syntax_error.c
+xml_syntax_error.c: In function ‘Nokogiri_error_raise’:
+xml_syntax_error.c:10:34: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+   10 | void Nokogiri_error_raise(void * ctx, xmlErrorPtr error)
+      |                           ~~~~~~~^~~
+compiling xml_text.c
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_text.h:4,
+                 from xml_text.c:1:
+xml_text.c: In function ‘new’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_text.c:18:3: note: in expansion of macro ‘rb_scan_args’
+   18 |   rb_scan_args(argc, argv, "2*", &string, &document, &rest);
+      |   ^~~~~~~~~~~~
+compiling xml_xpath_context.c
+xml_xpath_context.c: In function ‘lookup’:
+xml_xpath_context.c:162:48: warning: unused parameter ‘ns_uri’ [-Wunused-parameter]
+  162 |                                 const xmlChar* ns_uri )
+      |                                 ~~~~~~~~~~~~~~~^~~~~~
+xml_xpath_context.c: In function ‘xpath_generic_exception_handler’:
+xml_xpath_context.c:172:52: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+  172 | static void xpath_generic_exception_handler(void * ctx, const char *msg, ...)
+      |                                             ~~~~~~~^~~
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xml_xpath_context.h:4,
+                 from xml_xpath_context.c:1:
+xml_xpath_context.c: In function ‘evaluate’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xml_xpath_context.c:200:6: note: in expansion of macro ‘rb_scan_args’
+  200 |   if(rb_scan_args(argc, argv, "11", &search_path, &xpath_handler) == 1)
+      |      ^~~~~~~~~~~~
+xml_xpath_context.c: In function ‘Nokogiri_marshal_xpath_funcall_and_return_values’:
+xml_xpath_context.c:133:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  133 |       if(rb_obj_is_kind_of(result, cNokogiriXmlNodeSet)) {
+      |         ^
+xml_xpath_context.c:139:5: note: here
+  139 |     default:
+      |     ^~~~~~~
+compiling xslt_stylesheet.c
+xslt_stylesheet.c: In function ‘parse_stylesheet_doc’:
+xslt_stylesheet.c:64:41: warning: unused parameter ‘klass’ [-Wunused-parameter]
+   64 | static VALUE parse_stylesheet_doc(VALUE klass, VALUE xmldocobj)
+      |                                   ~~~~~~^~~~~
+xslt_stylesheet.c: In function ‘swallow_superfluous_xml_errors’:
+xslt_stylesheet.c:112:51: warning: unused parameter ‘userdata’ [-Wunused-parameter]
+  112 | static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, ...)
+      |                                            ~~~~~~~^~~~~~~~
+xslt_stylesheet.c:112:73: warning: unused parameter ‘error’ [-Wunused-parameter]
+  112 | static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, ...)
+      |                                                             ~~~~~~~~~~~~^~~~~
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
+                 from ./nokogiri.h:33,
+                 from ./xslt_stylesheet.h:4,
+                 from xslt_stylesheet.c:1:
+xslt_stylesheet.c: In function ‘transform’:
+/usr/include/ruby-2.7.0/ruby/ruby.h:2508:48: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+ 2508 |        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+      |                                                ^
+/usr/include/ruby-2.7.0/ruby/ruby.h:2340:9: note: in expansion of macro ‘rb_scan_args0’
+ 2340 |         rb_scan_args0(argc,argvp,fmt,\
+      |         ^~~~~~~~~~~~~
+xslt_stylesheet.c:141:5: note: in expansion of macro ‘rb_scan_args’
+  141 |     rb_scan_args(argc, argv, "11", &xmldoc, &paramobj);
+      |     ^~~~~~~~~~~~
+xslt_stylesheet.c: In function ‘shutdownFunc’:
+xslt_stylesheet.c:226:17: warning: unused parameter ‘uri’ [-Wunused-parameter]
+  226 |  const xmlChar *uri, void *data)
+      |  ~~~~~~~~~~~~~~~^~~
+xslt_stylesheet.c:226:28: warning: unused parameter ‘data’ [-Wunused-parameter]
+  226 |  const xmlChar *uri, void *data)
+      |                      ~~~~~~^~~~
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+rm -rf /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
+rm -rf /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ports
+
+current directory: /home/sym/project/ruby/hw-sinatra-saas-wordguesser-master/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20211020-26553-12y1t7/nokogiri
